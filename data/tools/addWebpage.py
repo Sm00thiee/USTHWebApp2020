@@ -6,3 +6,4 @@ def add(website):
         else:
             with open("data/pages.txt", "a") as f_a:
                 f_a.write(f"{website}\n")
+            print(colored("\nSuccessfully added the website", "green"))
