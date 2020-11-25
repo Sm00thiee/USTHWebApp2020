@@ -6,8 +6,8 @@ class CovidImageScraper():
         options = webdriver.ChromeOptions()
         options.add_argument('--ignore-certificate-errors')
         options.add_argument('--ignore-ssl-errors')
-        # self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"data/tools/driver/driver.exe"))
-        self.driver = webdriver.Chrome(chrome_options=options)
+        self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"data/tools/driver/driver.exe"))
+        # self.driver = webdriver.Chrome(chrome_options=options)
         self.links = []
 
     def init_link(self):
