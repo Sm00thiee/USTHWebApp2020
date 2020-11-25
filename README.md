@@ -1,6 +1,8 @@
-(1) Introduction
+# USTH Web crawler - GROUP (I don't remember)
 
-(2) Instruction
+## Introduction
+
+## Instruction
 
     1. Setup the environment
 * For the best experience:
@@ -20,4 +22,4 @@ python data/manage.py
 python app.py
 ```
 
-(3) I don't know
+## I don't know
