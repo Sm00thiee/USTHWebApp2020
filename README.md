@@ -9,11 +9,15 @@
 ```console
 python setup.py
 ```
-
     2. Run the website locally by run:
+* Manage data:
+```console
+python data/manage.py
+```
+
+* Run website:
 ```console
 python app.py
 ```
-Or basically run app.py
 
 [3] I don't know
