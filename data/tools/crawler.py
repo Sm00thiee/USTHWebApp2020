@@ -49,10 +49,17 @@ class CovidImageScraper():
 
     def run(self):
         self.init_link()
+        i = 0
         for link in self.links:
+            i+=1
             self.getLink(link)
             self.savePicture()
-            self.driver.close()
+            if i == 1:
+                print(colored(f"Crawled images successful {i} time", 'green'))
+            else:
+                print(colored(f"Crawled images successful {i} times", "green"))
+        self.driver.close()
+        
 def main():
     crawler = CovidImageScraper()
     crawler.run()
