@@ -22,4 +22,9 @@ python data/manage.py
 python app.py
 ```
 
-## I don't know
+## Members of group:
+1. Lê Trọng Hoàng - BI9-241 _Leader_
+2. Đoàn Trung Kiên - BI9-138 _something_
+3. Nguyễn Thế Trung - BI9-224 _another_
+4. Lưu Quý Nhân - BI9-178 _another
+5. _Someone_ _Something_
