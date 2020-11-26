@@ -13,6 +13,7 @@ class CovidImageScraper():
             self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
         elif type_of_web ==2:
             self.driver = webdriver.Firefox(firefox_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
+
         # self.driver = webdriver.Chrome(chrome_options=options)
         self.links = []
         self.count = self.none = self.duplicated = 0
