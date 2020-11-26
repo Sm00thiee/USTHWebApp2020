@@ -1,12 +1,7 @@
 from .tools.crawler import CovidImageScraper
 from .tools.addWebpage import add
 from termcolor import colored
-<<<<<<< HEAD
-
-
-=======
 from os import system
->>>>>>> main
 def menu():
     print("\n"+"-"*20+ colored(" DATA MANAGEMENT SYSTEM ", "green") + "-"*20)
     print("""
@@ -16,9 +11,6 @@ def menu():
     """)
     print("-"*64)
 
-<<<<<<< HEAD
-
-=======
 def input_number_of_page(page=0):
     try:
         page = int(input("Enter number of page that you want to crawl (from 1 to 12): "))
@@ -61,7 +53,6 @@ def input_type_of_web(web=0):
             return input_type_of_web()
         else:
             return int(web)
->>>>>>> main
 def main():
     run = True
     cmd_list = [0, 1, 2]
@@ -69,20 +60,6 @@ def main():
         cmd = ""
         while cmd not in cmd_list:
             menu()
-<<<<<<< HEAD
-            cmd = int(input("Your command: "))
-            if cmd == 0:
-                run = False
-                break
-            elif cmd == 1:
-                web = input("Enter link want to add: ")
-                add(web)
-            elif cmd == 2:
-                crawler = CovidImageScraper()
-                crawler.run()
-            else:
-                print(colored("\n It's not a function.", "red"))
-=======
             cmd = input_command()
         if cmd == 0:
             run = False
@@ -98,13 +75,8 @@ def main():
         else:
             print(colored("\n It's not a function.", "red"))
 
->>>>>>> main
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    main()
-=======
     system("clear")
     main()
->>>>>>> main
