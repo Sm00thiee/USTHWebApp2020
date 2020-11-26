@@ -2,11 +2,17 @@ from selenium import webdriver
 from termcolor import colored
 import os, time
 class CovidImageScraper():
-    def __init__(self):
-        options = webdriver.ChromeOptions()
+    def __init__(self, type_of_web=1):
+        if type_of_web == 1:
+            options = webdriver.ChromeOptions()
+        elif type_of_web == 2:
+            options = webdriver.FirefoxOptions()
         options.add_argument('--ignore-certificate-errors')
         options.add_argument('--ignore-ssl-errors')
-        self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
+        if type_of_web ==1:
+            self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
+        elif type_of_web ==2:
+            self.driver = webdriver.Firefox(firefox_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
         # self.driver = webdriver.Chrome(chrome_options=options)
         self.links = []
         self.count = self.none = self.duplicated = 0

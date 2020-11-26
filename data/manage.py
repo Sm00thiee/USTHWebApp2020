@@ -37,6 +37,22 @@ def input_command(cmd=0):
         else:
             return int(cmd)
 
+def input_type_of_web(web=0):
+    try:
+        print("""
+        1. Chrome
+        2. Firefox
+        """)
+        web = int(input("Your type of web: "))
+    except:
+        print(colored("\nWrong format of type!\n", 'red'))
+        return input_command()
+    finally:
+        if web not in (1, 2):
+            print(colored("\nThe type is out of value!\n", "red"))
+            return input_type_of_web()
+        else:
+            return int(web)
 def main():
     run = True
     cmd_list = [0,1,2]
@@ -52,9 +68,9 @@ def main():
             web = input("Enter link want to add: ")
             add(web)
         elif cmd == 2:
+            crawler = CovidImageScraper(input_type_of_web())
             number_of_page = input_number_of_page()
             print("\n"+ colored("-"*10,"cyan") + colored("   Start crawling!   ", 'green') + colored("-"*10,"cyan") +'\n')
-            crawler = CovidImageScraper()
             crawler.run(int(number_of_page))
         else:
             print(colored("\n It's not a function.", "red"))
