@@ -4,5 +4,25 @@
 Group 9
 {% endblock %}
 
-{% block body %}
+{% block img_data %}
+<div class="row">
+{% for i in range(0, 9)%}
+    <div class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <img class="card-img-top" src="{{links[i]}}" alt="{{titles[i]}}" width="267" height="231">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href='{{links[i]}}'>
+                <div class='viewBut'>
+                  <button type="button" class="">{{titles[i]}}</button></a>
+                </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+{% endfor %}
+</div>
 {% endblock %}

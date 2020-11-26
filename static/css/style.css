@@ -2,3 +2,47 @@
     background-color: #446491;
     color: white;
 }
+.center {
+    text-align: center;
+  }
+.pagination {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #446491;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+.viewBut {
+    display: inline-block;
+    text-align: center;
+  }
+.viewBut button{
+    background-color: white;
+    border-style: solid;
+    border:2px black solid;
+    border-radius: 8px;
+    border-color: #ddd;
+    color: rgb(120, 125, 134);
+}
+.viewBut button:hover {
+    background-color: #446491;
+    color:white;
+    border-radius: 8px;
+    border-color: #446491;
+}
