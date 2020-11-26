@@ -6,7 +6,7 @@ class CovidImageScraper():
         options = webdriver.ChromeOptions()
         options.add_argument('--ignore-certificate-errors')
         options.add_argument('--ignore-ssl-errors')
-        self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"data/tools/driver/driver.exe"))
+        self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
         # self.driver = webdriver.Chrome(chrome_options=options)
         self.links = []
         self.count = self.none = self.duplicated = 0
@@ -29,10 +29,9 @@ class CovidImageScraper():
         try:
             for index in range(2, 12):
                 data = self.driver.find_element_by_css_selector(f'div.td_module_19:nth-child({index}) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)')
-                                                                #'div.td_module_19:nth-child({index}) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)')
-                all_data.append(data)
-            for data in all_data:
+                data2 = self.driver.find_element_by_css_selector(f'div.td_module_19:nth-child({index}) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)')
                 pic_link = str(data.get_attribute("data-img-url"))
+                pic_title = str(data2.get_attribute("title"))
                 if pic_link is not None and str(pic_link) != "None":
                     pic_link = str(pic_link)
                     if len(pic_link) <= 100:
@@ -43,11 +42,15 @@ class CovidImageScraper():
                                 count+=1
                                 with open("data/links.txt", "a") as f_w:
                                     f_w.write(f"{pic_link}\n")
+                                with open("data/titles.txt", "a") as f_w_2:
+                                    f_w_2.write(f"{pic_title}\n")
                     else:
                         none += 1
                 else:
                     none+=1
                     # print("This is not a link!")
+        except NameError:
+            print(colored("\nOut of data!\n","red"))
         except:
             print(colored("\nSave Picture error!\n","red"))
         
