@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
+    <script src="/static/js/myjs.js"></script>
 </head>
 <body>
     <div class="jumbotron text-center" id='top-tittle' style="margin-top:0">
@@ -25,16 +26,8 @@
           </div>
         </div>
         <div class='center'>
-          <div class="pagination" class='row'>
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#" class="active">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-          </div>
+          {% block pagination %}
+          {% endblock %}
         </div>
     </main>
       <footer class="jumbotron text-center" style="margin-bottom:0">

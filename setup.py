@@ -1,17 +1,15 @@
 import os
 import requests, zipfile, io
-from termcolor import colored
 
 os.system("pip install termcolor")
+from termcolor import colored
 def getDriver(url, type_of_web):
     path = os.getcwd()+"/data/tools/driver"
     r = requests.get(url, stream=True)
     z = zipfile.ZipFile(io.BytesIO(r.content))
     z.extractall(path)
-    if type_of_web == "1":
-        os.rename(path+ "/chromedriver.exe", path+"/driver.exe")
-    elif type_of_web =="2":
-        os.rename(path+ "/geckodriver.exe", path+"/driver.exe")
+    if type_of_web =="2":
+        os.rename(path+ "/geckodriver.exe", path+"/firefoxdriver.exe")
     print(colored("\nGot Driver!\n", "green"))
 
 while True:
