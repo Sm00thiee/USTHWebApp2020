@@ -10,7 +10,7 @@ class CovidImageScraper():
         options.add_argument('--ignore-certificate-errors')
         options.add_argument('--ignore-ssl-errors')
         if type_of_web ==1:
-            self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
+            self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/chromedriver.exe"))
         elif type_of_web ==2:
             self.driver = webdriver.Firefox(firefox_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
 

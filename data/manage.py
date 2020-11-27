@@ -1,5 +1,5 @@
-from .tools.crawler import CovidImageScraper
-from .tools.addWebpage import add
+from tools.crawler import CovidImageScraper
+from tools.addWebpage import add
 from termcolor import colored
 from os import system
 def menu():

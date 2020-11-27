@@ -9,7 +9,8 @@ def getDriver(url, type_of_web):
     z = zipfile.ZipFile(io.BytesIO(r.content))
     z.extractall(path)
     if type_of_web == "1":
-        os.rename(path+ "/chromedriver.exe", path+"/driver.exe")
+        # os.rename(path+ "/chromedriver.exe", path+"/driver.exe")
+        pass
     elif type_of_web =="2":
         os.rename(path+ "/geckodriver.exe", path+"/driver.exe")
     print(colored("\nGot Driver!\n", "green"))
