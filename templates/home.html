@@ -4,5 +4,64 @@
 Group 9
 {% endblock %}
 
-{% block body %}
+{% block img_data %}
+<div class="row">
+{% if page == 1 %}
+  {% for i in range(0, 9)%}
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="{{links[i]}}" alt="{{titles[i]}}" width="267" height="231">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href='{{links[i]}}'>
+                  <div class='viewBut'>
+                    <button type="button">{{titles[i]}}</button></a>
+                  </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+  {% endfor %}
+{% else %}
+{% for i in range((page-1)*9, page*9)%}
+<div class="col-md-4">
+  <div class="card mb-4 box-shadow">
+    <img class="card-img-top" src="{{links[i]}}" alt="{{titles[i]}}" width="267" height="231">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <a href='{{links[i]}}' target="_blank">
+            <div class='viewBut'>
+              <button type="button">{{titles[i]}}</button></a>
+            </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+
+</div>
+{% endblock %}
+
+{% block pagination %}
+<div id='pagination' class="pagination" class='row'>
+  {% if page > 1 %}
+    <a href="{{page-1}}">&laquo;</a>
+  {% endif %}
+  {% for i in range(1, pages+1) %}
+    {% if i == page %}
+      <a href="{{i}}" class='active'>{{i}}</a>
+    {% else %}
+      <a href="{{i}}">{{i}}</a>
+    {% endif %}
+  {% endfor %}
+  {% if page < pages-1 %}
+    <a href="{{page+1}}">&raquo;</a>
+  {% endif %}
+</div>
 {% endblock %}
