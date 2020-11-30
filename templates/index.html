@@ -9,11 +9,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <script src="/static/js/myjs.js"></script>
 </head>
-<body>
+<body onload="deletePic()">
     <div class="jumbotron text-center" id='top-tittle' style="margin-top:0">
-        <h1>Covid-19 X-ray Images</h1>
-        <p>Final project of group 9</p> 
+        <h1>COVID-19 X-RAY IMAGE REPRESENTATION</h1>
+        <h2>GROUP 9 - FINAL PROJECT</h2>
+        <p>USTH - WEB APP DEVELOPMENT</p> 
+
     </div>
 
     <main role="main">  
@@ -25,16 +30,8 @@
           </div>
         </div>
         <div class='center'>
-          <div class="pagination" class='row'>
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#" class="active">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-          </div>
+          {% block pagination %}
+          {% endblock %}
         </div>
     </main>
       <footer class="jumbotron text-center" style="margin-bottom:0">
@@ -46,9 +43,9 @@
             <div class="col-md-6 mt-md-0 mt-3">
       
 
-              <h5 class="text-uppercase">Team members</h5>
+              <h5 class="text-uppercase center">Team members</h5>
               <p>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled center">
                   <li>Lê Trọng Hoàng - BI9.241</li>
                   <li>Lưu Quý Nhân - BI9.178</li>
                   <li>Nguyễn Thế Trung - BI9.224</li>
@@ -65,9 +62,9 @@
             <div class="col-md-3 mb-md-0 mb-3">
       
  
-              <h5 class="text-uppercase">References</h5>
+              <h5 class="text-uppercase center">References</h5>
       
-              <ul class="list-unstyled">
+              <ul class="list-unstyled center">
                 <li>
                   <a href="https://www.sirm.org/category/senza-categoria/covid-19/"><img src='https://www.sirm.org/wp/wp-content/uploads/2019/02/logo-top.png'></img></a>
                 </li>

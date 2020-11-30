@@ -12,7 +12,7 @@ class CovidImageScraper():
         if type_of_web ==1:
             self.driver = webdriver.Chrome(chrome_options=options, executable_path=(os.getcwd()+"/data/tools/driver/chromedriver.exe"))
         elif type_of_web ==2:
-            self.driver = webdriver.Firefox(firefox_options=options, executable_path=(os.getcwd()+"/data/tools/driver/driver.exe"))
+            self.driver = webdriver.Firefox(firefox_options=options, executable_path=(os.getcwd()+"/data/tools/driver/firefoxdriver.exe"))
 
         # self.driver = webdriver.Chrome(chrome_options=options)
         self.links = []
@@ -32,7 +32,6 @@ class CovidImageScraper():
 
     def savePicture(self):
         count = none = duplicated = 0
-        all_data = []
         try:
             for index in range(2, 12):
                 data = self.driver.find_element_by_css_selector(f'div.td_module_19:nth-child({index}) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)')
