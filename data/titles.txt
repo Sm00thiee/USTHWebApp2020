@@ -1,13 +1,3 @@
-COVID-19: caso 111
-COVID-19: caso 110
-COVID-19: caso 109
-COVID-19: caso 108
-COVID-19: caso 107
-COVID-19: caso 106
-COVID-19: caso 105
-COVID-19: caso 104
-COVID-19: caso 103
-COVID-19: caso 102
 COVID-19: caso 101
 COVID-19: caso 100
 COVID-19: caso 99
