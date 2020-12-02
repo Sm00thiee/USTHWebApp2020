@@ -13,20 +13,20 @@ For best experience:
     - This automation setup is for Windows 64bits only.
     - Update your web browser either Chrome/Chromium or Firefox to the latest version.
 ```console
-pip install -r 'requirements.txt'
 python setup.py
 ```
 2. Run the website locally by run:
-* Manage data:
+* Manage the data:
 ```console
 python data/manage.py
 ```
 
-* Run website:
+* Run website locally:
 ```console
 python app.py
-then follow the instructions given in command line.
 ```
+
+* Open web browser and connect into *127.0.0.1:5000/*.
 
 ## HOW IT WORKS:
 
