@@ -11,7 +11,7 @@
 1. Setup the environment
 For best experience:
     - This automation setup is for Windows 64bits only.
-    - Update your web browser either Chrome/Chromium or Firefox to the latest version.
+    - Update your web browser either Chrome or Firefox to the latest version.
 ```console
 python setup.py
 ```
@@ -26,7 +26,7 @@ python data/manage.py
 python app.py
 ```
 
-* Open web browser and connect into [*127.0.0.1:5000/*](127.0.0.1:5000/).
+* Open web browser and connect into *127.0.0.1:5000/*.
 
 ## HOW IT WORKS:
 
