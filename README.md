@@ -36,11 +36,11 @@ python app.py
     
 2. With python flask, the crawled links are automatically updated onto the website.
 
-3. For more information, view our [documentation](https://docs.google.com/document/d/1bM8w23ge77J3hhJFH-npvPDKrf3ZHwGpgl65mByK6cg/)
+3. For more information, view our [documentation](https://docs.google.com/document/d/1bM8w23ge77J3hhJFH-npvPDKrf3ZHwGpgl65mByK6cg/).
 
 
 ## Group members:
-1. Lê Trọng Hoàng - BI9-241 _Leader_
+1. Lê Trọng Hoàng - BI9-241 *_Leader_*
 2. Đoàn Trung Kiên - BI9-130 _member_
 3. Nguyễn Thế Trung - BI9-224 _member_
 4. Lưu Quý Nhân - BI9-178 _member_
