@@ -40,7 +40,7 @@ python app.py
 
 
 ## Group members:
-1. Lê Trọng Hoàng - BI9-241 *_Leader_*
+1. Lê Trọng Hoàng - BI9-241 **_Leader_**
 2. Đoàn Trung Kiên - BI9-130 _member_
 3. Nguyễn Thế Trung - BI9-224 _member_
 4. Lưu Quý Nhân - BI9-178 _member_
