@@ -30,9 +30,9 @@ python app.py
 
 ## HOW IT WORKS:
 
-1. In 'tools' folder, there are two tool files, namely 'crawler.py' and 'addWebpage.py'.
-    - addWebpage.py is a tool to add a new website link to the list, in order to crawl image data. (1)
-    - crawler.py is tool to get image links from websites added to the list from step (1), using python selenium (retrieving css selectors), then write crawled links into a file named 'data/links.txt'.
+1. In 'tools' folder, there are two tool files, namely _crawler.py_ and _addWebpage.py_.
+    - **_addWebpage.py_** is a tool to add a new website link to the list, in order to crawl image data. (1)
+    - **_crawler.py_** is tool to get image links from websites added to the list from step (1), using python _selenium_ (retrieving css selectors), then write crawled links into a file named _data/links.txt_.
     
 2. With python flask, the crawled links are automatically updated onto the website.
 
