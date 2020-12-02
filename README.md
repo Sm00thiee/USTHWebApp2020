@@ -1,14 +1,19 @@
-# USTH Web crawler - GROUP (I don't remember)
+# USTH Web crawler - GROUP 5
 
 ## Introduction
 
-## Instruction
+    - This website is built for the Final Project of the course: USTH Web Application - Intake 2019-2020, ICT Department.
+    - The website is a COVID-19 X-RAY IMAGE REPRESENTATION, where images are crawled automatically from another website.
+    - The whole system is built mainly on Python (Libraries used: selenium, flask, termcolor,..), HTML, CSS and JavaScript.
+
+## Installation
 
 1. Setup the environment
-For the best experience:
+For best experience:
     - This automation setup is for Windows 64bits only.
-    - You should update your web browser either Chrome/Chromium or Firefox to the newest version.
+    - Update your web browser either Chrome/Chromium or Firefox to the latest version.
 ```console
+pip install -r 'requirements.txt'
 python setup.py
 ```
 2. Run the website locally by run:
@@ -20,11 +25,22 @@ python data/manage.py
 * Run website:
 ```console
 python app.py
+then follow the instructions given in command line.
 ```
 
-## Members of group:
+## HOW IT WORKS:
+
+1. In 'tools' folder, there are two tool files, namely 'crawler.py' and 'addWebpage.py'.
+    - addWebpage.py is a tool to add a new website link to the list, in order to crawl image data. (1)
+    - crawler.py is tool to get image links from websites added to the list from step (1), using python selenium (retrieving css selectors), then write crawled links into a file named 'data/links.txt'.
+    
+2. With python flask, the crawled links are automatically updated onto the website.
+
+3. For more information, view our documentation: {link}
+
+
+## Group members:
 1. Lê Trọng Hoàng - BI9-241 _Leader_
-2. Đoàn Trung Kiên - BI9-130 _something_
-3. Nguyễn Thế Trung - BI9-224 _another_
-4. Lưu Quý Nhân - BI9-178 _another_
-5. Trần Đức Quang - BI8.144 _another_
+2. Đoàn Trung Kiên - BI9-130 _member_
+3. Nguyễn Thế Trung - BI9-224 _member_
+4. Lưu Quý Nhân - BI9-178 _member_
