@@ -36,7 +36,7 @@ python app.py
     
 2. With python flask, the crawled links are automatically updated onto the website.
 
-3. For more information, view our documentation: {link}
+3. For more information, view our [documentation](https://docs.google.com/document/d/1bM8w23ge77J3hhJFH-npvPDKrf3ZHwGpgl65mByK6cg/)
 
 
 ## Group members:
@@ -44,3 +44,4 @@ python app.py
 2. Đoàn Trung Kiên - BI9-130 _member_
 3. Nguyễn Thế Trung - BI9-224 _member_
 4. Lưu Quý Nhân - BI9-178 _member_
+5. Trần Đức Quang - BI8-144 _member_
