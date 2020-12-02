@@ -26,7 +26,7 @@ python data/manage.py
 python app.py
 ```
 
-* Open web browser and connect into [*127.0.0.1:5000/*](127.0.0.1:5000).
+* Open web browser and connect into [*127.0.0.1:5000/*](127.0.0.1:5000/).
 
 ## HOW IT WORKS:
 
